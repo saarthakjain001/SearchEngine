@@ -17,7 +17,7 @@ class tf_idf:
 				return_vector.append(word_count[word]);
 			else:
 				return_vector.append(0);
-		iterate=0;
+		iterate = 0
 		for word in global_word:
 			print(word + ' ' + str(return_vector[iterate]))
 			iterate=iterate+1
@@ -27,4 +27,4 @@ globa = ['Wishing','former', 'cricketer', 'Zaheer', 'Khan', 'on', 'the', 'occasi
 test = ['Wishing','former', 'cricketer', 'Zaheer', 'Khan', 'on', 'the', 'occasion', 'of', 'his', '41st', 'birthday', 'Team', 'India', 'all-rounder' ,'Hardik', 'Pandya', 'shared', 'a', 'video', 'of', 'him','Pandya','Pandya','trolls','Zaheer','Khan']
 
 tr = tf_idf()
-tr.tf_doc_specific(test,globa)
+tr.tf_doc_specific(test, globa)
